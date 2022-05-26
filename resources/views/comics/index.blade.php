@@ -8,5 +8,8 @@
         <h3>Genere: {{ $comic->type }}</h3>
         <h3>Serie: {{ $comic->series }}</h3>
         <a href="{{ route('comics.show', $comic->id) }}">Details</a>
+        <a href="{{route('comics.create')}}">new</a>
+        <a href="{{route('comics.edit', $comic->id)}}">edit</a>
+        <a href="{{route('comics.destroy', $comic->id)}}">delete</a>
     </div>
 @endforeach
